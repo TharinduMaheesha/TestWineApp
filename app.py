@@ -1,7 +1,6 @@
 
 import pandas as pd 
 import streamlit as st
-from PIL import Image
 import pickle
 
 
@@ -22,8 +21,7 @@ st.write("""
 
 
 #read in wine image and render with streamlit
-image = Image.open('wine_image3.png')
-st.image(image, caption='wine company',use_column_width=True)
+st.image("wine_image3.png", caption='wine company',use_column_width=True)
 
 st.sidebar.header('User Input Parameters') #user input parameter collection with streamlit side bar
 
